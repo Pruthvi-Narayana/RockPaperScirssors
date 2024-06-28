@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+      .js-subscribe-button{
+        background-color: black;
+        color: whitesmoke;
+        border-style:solid ;
+        border-width: 0px;
+      }
+      
+      .is-subscribed{
+        background-color: gray;
+        color: black;
+        border-style:solid ;
+        border-width: 0px;
+
+      }
+    </style>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <p>Youtube Subscribe Button</p>
+    <button class="js-subscribe-button"
+      onclick="subscribe()">Subscribe</button>
+   <script>
+      function subscribe (){
+        const buttonElement = document.querySelector('.js-subscribe-button');
+        if (buttonElement.innerText === 'Subscribe'){
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('is-subscribed');
+        }
+        else{
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('is-subscribed')
+        }
+      }
+      console.log(localStorage.getItem('Win'))
+      localStorage.setItem={
+        Win : 0,
+        Lose : 0,
+        Tie : 0
+      }
+    </script>
+  </body>
+</html>
