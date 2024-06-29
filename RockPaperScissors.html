@@ -7,22 +7,26 @@
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
-    <button class="move-button" onclick="
-      playGame('rock');
-    "><img class="button-emoji" src="Components/rock-emoji.png"> </button>
-
-    <button class="move-button" onclick="
-      playGame('paper');
-    "> <img class="button-emoji" src="Components/paper-emoji.png"> </button>
-
-    <button class="move-button" onclick="
-      playGame('scissors');
-    "><img class="button-emoji" src="Components/scissors-emoji.png"> </button>
-
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
-
-    <button class="reset-button" onclick="resetResult();">Reset Score</button>
+    <div class="page-container">
+      <div class="div-container">
+        <button class="move-button" onclick="
+          playGame('rock');
+        "><img class="button-emoji" src="Components/rock-emoji.png"> </button>
+    
+        <button class="move-button" onclick="
+          playGame('paper');
+        "> <img class="button-emoji" src="Components/paper-emoji.png"> </button>
+    
+        <button class="move-button" onclick="
+          playGame('scissors');
+        "><img class="button-emoji" src="Components/scissors-emoji.png"> </button>
+    
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score"></p>
+    
+        <button class="reset-button" onclick="resetResult();">Reset Score</button>
+      </div>
+    </div>
   </body>
 </html>
