@@ -1,13 +1,19 @@
-body{
+html , body{
   background-color: rgb(25, 25, 25);
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 .title{
   font-size: 40px;
   font-weight: bold;
-  
+  text-align: center;  
 }
 .button-emoji{
   height: 50px;
